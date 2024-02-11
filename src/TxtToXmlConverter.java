@@ -71,7 +71,7 @@ public class TxtToXmlConverter {
 
     // Main method.
     public static void main(String[] args) {
-        String inputTxtFile = "predefined_data.txt"; // Defining the input text file.
+        String inputTxtFile = "predefined_dta.tx"; // Defining the input text file.
         String outputXmlFile = "output.xml"; // Defining the output xml file.
 
         Path txtFilePath = Paths.get(inputTxtFile); // Assigning a path to the input text file.
