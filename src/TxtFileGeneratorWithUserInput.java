@@ -1,9 +1,13 @@
 // Importing necessary packages to run the program.
+import org.apache.log4j.Logger;
+
 import java.util.Scanner;
 import java.io.*;
 
 // Is used to create a '.txt' file with the information such as - brandName, modelName, builtVersion based on the user input.
 public class TxtFileGeneratorWithUserInput {
+
+    private static final Logger loggerTxtFileGeneratorWithUserInput = Logger.getLogger(TxtFileGeneratorWithUserInput.class); // Initiating logger for this class.
 
     // A private method to define the '.txt' file, and to assign the values for the necessary components based on the user input.
     // This class is then called in the psvm method below in order to run and create the text file with the necessary user input data.
@@ -49,6 +53,7 @@ public class TxtFileGeneratorWithUserInput {
                 System.out.print("Version : ");
                 String laptopVersion = scanner.nextLine(); // For the input of 'builtVersion'.
 
+                System.out.println();
                 // A string format to store the relevant data in the required text file.
                 String laptopDetails = (i + ". brandName=" + laptopBrand + ";\n" +
                                         i + ". modelName=" + laptopModel + ";\n" +
@@ -56,10 +61,10 @@ public class TxtFileGeneratorWithUserInput {
                 txtWriter.write(laptopDetails + "\n"); // To write the data into the text file.
             }
             txtWriter.close(); // To write the data and close the FileWriter stream. Unless closed, the data won't be written into the file.
-            System.out.println("\nGreat.\nThe Data Has Been Successfully Written To The TXT File."); // Message to show successful creation of the text file.
+            loggerTxtFileGeneratorWithUserInput.info("Great. The Data Has Been Successfully Written To The 'written_data_user_input.txt' File.\n"); // Message to show successful creation of the text file.
         }
         catch (IOException e) {
-            System.out.println("\nSorry.\nUnable To Create The Desired TXT File Containing The Data Required!!!"); // Message to show error in creating the text file.
+            loggerTxtFileGeneratorWithUserInput.error("Sorry. Unable To Create The Desired 'written_data_user_input.txt' File Containing The Data Required!!!\n"); // Message to show error in creating the text file.
             e.printStackTrace();
         }
     }
@@ -68,6 +73,7 @@ public class TxtFileGeneratorWithUserInput {
     public static void main(String[] args) throws IOException {
         TxtFileGeneratorWithUserInput createTextFile = new TxtFileGeneratorWithUserInput(); // Creating an instance for the class.
         createTextFile.requestingUserInputTextData(); // Calling the 'requestingUserInputTextData' method to run the class.
+        loggerTxtFileGeneratorWithUserInput.info("Successfully Ran The TxtFileGeneratorWithUserInput.java Class.\n");
     }
 
     // Default Constructor.

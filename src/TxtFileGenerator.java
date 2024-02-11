@@ -21,9 +21,9 @@ public class TxtFileGenerator {
             txtWriter.write("3. brandName=Samsung;\n3. modelName=GalaxyBook2-Pro-360;\n3. builtVersion=3.684;\n\n");
             txtWriter.write("4. brandName=Apple;\n4. modelName=Macbook-Pro;\n4. builtVersion=2.8.99;");
             txtWriter.close(); // To write the data and close the FileWriter stream. Unless closed, the data won't be written into the file.
-            loggerTxtFileGenerator.info("Great. The Data Has Been Successfully Written To The TXT File.\n"); // Message to show successful creation of the text file.
+            loggerTxtFileGenerator.info("Great. The Data Has Been Successfully Written To The 'written_data.txt' File.\n"); // Message to show successful creation of the text file.
         } catch (IOException e) {
-            loggerTxtFileGenerator.error("Sorry. Unable To Create The Desired TXT File Containing The Data Required!!!\n"); // Message to show error in creating the text file.
+            loggerTxtFileGenerator.error("Sorry. Unable To Create The Desired 'written_data.txt' File Containing The Data Required!!!\n"); // Message to show error in creating the text file.
             e.printStackTrace();
         }
     }
@@ -32,7 +32,7 @@ public class TxtFileGenerator {
     public static void main(String[] args) {
         TxtFileGenerator createTextFile = new TxtFileGenerator(); // Creating an instance for the class.
         createTextFile.writingTextDataToTxtFile(); // Calling the 'writingTextDataToTxtFile' method to run the class.
-        loggerTxtFileGenerator.info("Successfully Ran TxtFileGenerator.java Class.\n");
+        loggerTxtFileGenerator.info("Successfully Ran The TxtFileGenerator.java Class.\n");
     }
 
     // Default Constructor.
