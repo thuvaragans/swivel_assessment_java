@@ -1,0 +1,11 @@
+1. brandName=Toshiba;
+1. modelName=Satellite-C850;
+1. builtVersion=1.05;
+
+2. brandName=Dell;
+2. modelName=Inspiron-5500;
+2. builtVersion=2.1.15;
+
+3. brandName=HP;
+3. modelName=Pavilion-G6;
+3. builtVersion=3.2;
