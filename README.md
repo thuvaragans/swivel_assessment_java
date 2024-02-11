@@ -7,7 +7,7 @@ WELCOME!!!
    View that text file to see the data if needed.
 2. It can be used to be written in an XML format using the class -> TxtToXmlConverter.java
 3. Open TxtToXmlConverter.java class and direct to line 74.
-4. Change the name of the input text file as "predefined_data.txt", and then run the class.
+4. Change the name of the input text file as "predefined_data.txt", and then run the class. (Note: it is set to "predefined_data.txt" already)
 5. The new xml file gets created, and will have the written data from text to xml in -> output.xml
 6. Open the output.xml file to view the newly written XML data.
 
