@@ -1,6 +1,5 @@
 // Importing necessary packages to run the program.
 import org.apache.log4j.Logger;
-
 import java.io.*;
 import java.nio.file.*;
 
