@@ -1,9 +1,13 @@
 // Importing necessary packages to run the program.
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.nio.file.*;
 
 // Is used to create an '.xml' file and to store the data from reading text file into it, in a Proper XML format.
 public class TxtToXmlConverter {
+
+    private static final Logger loggerTxtToXmlConverter = Logger.getLogger(TxtToXmlConverter.class); // Initiating logger for this class.
 
     // A private method to define the '.xml' file, and its format.
     // Is used to read from a '.txt' file, and write into an '.xml' file.
@@ -81,11 +85,12 @@ public class TxtToXmlConverter {
             TxtToXmlConverter txtToXmlConverter = new TxtToXmlConverter(); // Creating an instance for the class.
             txtToXmlConverter.txtToXmlFile(inputTxtFile, outputXmlFile); // Calling the 'txtToXmlFile' method with the appropriate parameters to run the class.
             // Message to show successful completion of writing the data from the text file into the xml file.
-            System.out.println("Great Job!\nThe Data From The TXT File Has Been Written Into The XML File Successfully!!!\n");
+            loggerTxtToXmlConverter.info("Great Job! The Data From The '" + inputTxtFile + "' File Has Been Written Into The '" + outputXmlFile + "' File Successfully!!!\n");
+            loggerTxtToXmlConverter.info("Successfully Ran The TxtToXmlConverter.java Class.\n");
         }
         else {
             // Printing out text file not found statement.
-            System.out.println("ERROR!\nSorry. The Text File '" + inputTxtFile + "' Is Not Found.\nPlease Try Again.\n");
+            loggerTxtToXmlConverter.error("Error! Sorry. The Text File '" + inputTxtFile + "' Is Not Found. Please Try Again.\n");
         }
     }
 
