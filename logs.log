@@ -66,4 +66,32 @@
 
   2024-02-11 22:46:19 INFO  TxtToXmlConverter:89 - Successfully Ran The TxtToXmlConverter.java Class.
 
+  2024-02-11 22:52:20 INFO  TxtFileGenerator:24 - Great. The Data Has Been Successfully Written To The 'written_data.txt' File.
+
+  2024-02-11 22:52:20 INFO  TxtFileGenerator:35 - Successfully Ran The TxtFileGenerator.java Class.
+
+  2024-02-11 22:53:04 INFO  TxtFileGeneratorWithUserInput:63 - Great. The Data Has Been Successfully Written To The 'written_data_user_input.txt' File.
+
+  2024-02-11 22:53:04 INFO  TxtFileGeneratorWithUserInput:75 - Successfully Ran The TxtFileGeneratorWithUserInput.java Class.
+
+  2024-02-11 22:53:27 INFO  TxtToXmlConverter:87 - Great Job! The Data From The 'predefined_data.txt' File Has Been Written Into The 'output.xml' File Successfully!!!
+
+  2024-02-11 22:53:27 INFO  TxtToXmlConverter:88 - Successfully Ran The TxtToXmlConverter.java Class.
+
+  2024-02-11 22:53:52 ERROR TxtToXmlConverter:92 - Error! Sorry. The Text File 'written_data_user_inpu.txt' Is Not Found. Please Try Again.
+
+  2024-02-11 22:54:02 INFO  TxtToXmlConverter:87 - Great Job! The Data From The 'written_data_user_input.txt' File Has Been Written Into The 'output.xml' File Successfully!!!
+
+  2024-02-11 22:54:02 INFO  TxtToXmlConverter:88 - Successfully Ran The TxtToXmlConverter.java Class.
+
+  2024-02-11 22:54:47 INFO  TxtToXmlConverter:87 - Great Job! The Data From The 'predefined_data.txt' File Has Been Written Into The 'output.xml' File Successfully!!!
+
+  2024-02-11 22:54:47 INFO  TxtToXmlConverter:88 - Successfully Ran The TxtToXmlConverter.java Class.
+
+  2024-02-11 22:55:29 ERROR TxtToXmlConverter:92 - Error! Sorry. The Text File 'predefined_daa.txt' Is Not Found. Please Try Again.
+
+  2024-02-11 23:01:56 INFO  TxtToXmlConverter:87 - Great Job! The Data From The 'predefined_data.txt' File Has Been Written Into The 'output.xml' File Successfully!!!
+
+  2024-02-11 23:01:56 INFO  TxtToXmlConverter:88 - Successfully Ran The TxtToXmlConverter.java Class.
+
   
