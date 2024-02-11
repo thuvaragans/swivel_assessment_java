@@ -1,8 +1,11 @@
 // Importing necessary packages to run the program.
+import org.apache.log4j.Logger;
 import java.io.*;
 
 // Is used to create a '.txt' file with the pre-assigned information such as - brandName, modelName, builtVersion.
 public class TxtFileGenerator {
+
+    private static final Logger loggerTxtFileGenerator = Logger.getLogger(TxtFileGenerator.class); // Initiating logger for this class.
 
     // A private method to define the '.txt' file, and to assign the values for the necessary components.
     // This class is then called in the psvm method below in order to run and create the text file with the necessary data.
@@ -18,9 +21,9 @@ public class TxtFileGenerator {
             txtWriter.write("3. brandName=Samsung;\n3. modelName=GalaxyBook2-Pro-360;\n3. builtVersion=3.684;\n\n");
             txtWriter.write("4. brandName=Apple;\n4. modelName=Macbook-Pro;\n4. builtVersion=2.8.99;");
             txtWriter.close(); // To write the data and close the FileWriter stream. Unless closed, the data won't be written into the file.
-            System.out.println("Great.\nThe Data Has Been Successfully Written To The TXT File."); // Message to show successful creation of the text file.
+            loggerTxtFileGenerator.info("Great. The Data Has Been Successfully Written To The TXT File.\n"); // Message to show successful creation of the text file.
         } catch (IOException e) {
-            System.out.println("Sorry.\nUnable To Create The Desired TXT File Containing The Data Required!!!"); // Message to show error in creating the text file.
+            loggerTxtFileGenerator.error("Sorry. Unable To Create The Desired TXT File Containing The Data Required!!!\n"); // Message to show error in creating the text file.
             e.printStackTrace();
         }
     }
@@ -29,6 +32,7 @@ public class TxtFileGenerator {
     public static void main(String[] args) {
         TxtFileGenerator createTextFile = new TxtFileGenerator(); // Creating an instance for the class.
         createTextFile.writingTextDataToTxtFile(); // Calling the 'writingTextDataToTxtFile' method to run the class.
+        loggerTxtFileGenerator.info("Successfully Ran TxtFileGenerator.java Class.\n");
     }
 
     // Default Constructor.
